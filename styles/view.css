@@ -1,0 +1,128 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: #25B89B;
+    align-items: center;
+}
+
+* {
+    font-family: 'Baloo', cursive;
+}
+
+.title {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 5rem;    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.login h1 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #25B89B;
+    padding-bottom: 15px;
+}
+.announcements {
+    padding-left: 9px;
+}
+
+
+
+/*
+
+.announcements {
+    width: 130rem;
+    height: 50rem;
+    border-style: solid;
+    border-color: #25B89B;
+    margin-left: 5px;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .announcements {
+        width: 44rem;
+        height: 50rem;
+        margin-left: 5px;
+
+}
+}
+
+*/
+.input[type=text] {
+    width: 130px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.searchbar {
+    text-align: center;
+}
+
+.search {
+    border-color: #25B89B;
+
+}
+
+
+.add {
+    text-align: center;
+    
+}
+
+.addbutton {
+    color: #25B89B;
+    width: 190px;
+    border-radius: 22.5px;
+    border: none;
+    color: #25B89B;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.signout {
+    color: #25B89B;
+    width: 190px;
+    border-radius: 22.5px;
+    border: none;
+    color: #25B89B;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.circle {
+    fill: #25B89B;
+}
+
+.button {
+    align-items: center;
+}
+
+.remove {
+    height: 50px;
+    width: 50px;
+}
+
+.remove:hover {
+    opacity: 0.6;
+}
+
+.addpost {
+    height: 50px;
+    width: 50px;
+    padding:1px;
+    border:1px solid #25B89B;
+    border-radius: 15px;
+    align-items: center;
+}

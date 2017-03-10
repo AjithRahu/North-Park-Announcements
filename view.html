@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<script src="scripts/create.js"></script>
+<script src="scripts/search.js"></script>
+<meta charset="utf-8">
+<title>Announcements View</title>
+
+<link href="styles/view.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+</head>
+<body onload="viewPost()">
+		<div class="header">
+			<h1 class="title">North Park Announcements</h1>
+			<a href="index.html" class="signout"><button id="btnLogout">Sign Out</button></a>
+		</div>
+		<div class="searchbar">
+			<input type="text" name="search" placeholder="Search.." class="search">
+		</div>
+		<div class="view">
+			<div class="login">
+				<h1>View</h1>
+			</div>
+			<div class="announcements">
+				<div id="posted" class="row">
+					
+				</div>
+			</div>
+		<div class="button row">
+			<div class="col-lg-4"></div>
+			<div class="col-lg-4 add"><a href="create.html" class="addbutton"><img src="add_icon.svg" class="addpost"></a></div>
+			<div class="col-lg-4"></div>
+		</div>
+
+</body>
+</html>
