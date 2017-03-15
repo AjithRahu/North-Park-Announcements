@@ -1,4 +1,8 @@
-
+/*
+      NORTH PARK ANNOUNCEMENTS 
+            By: AJITH
+            
+*/            
 
 function viewPost() {
     
@@ -11,7 +15,7 @@ function viewPost() {
         for (var i = 0; i < posts.length; i++) {
          var postDetail = 
                     "<div class='announcement col-md-3' id='delete'> " +
-                    "<h1>Club: " + posts[i].club + "</h1>" +
+                    "<h1>" + posts[i].club + "</h1>" +
                     "<p>Date: " + posts[i].date + "</p>" +
                     "<p>Time: " + posts[i].time + "</p>" +
                     "<p>Location: " + posts[i].location + "</p>" +

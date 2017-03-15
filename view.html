@@ -10,11 +10,19 @@
 <link href="styles/view.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body onload="viewPost()">
 		<div class="header">
+			  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 			<h1 class="title">North Park Announcements</h1>
-			<a href="index.html" class="signout"><button id="btnLogout">Sign Out</button></a>
+					<div id="mySidenav" class="sidenav">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					  <a href="view.html">Home</a>
+					  <a href="create.html">Create</a>
+					  <a href="account.html">Settings</a>
+					  <a href="index.html">Sign Out</a>
+					</div>
 		</div>
 		<div class="searchbar">
 			<input type="text" name="search" placeholder="Search.." class="search">
@@ -33,6 +41,16 @@
 			<div class="col-lg-4 add"><a href="create.html" class="addbutton"><img src="add_icon.svg" class="addpost"></a></div>
 			<div class="col-lg-4"></div>
 		</div>
-
+		<script>
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		    document.getElementById("main").style.marginLeft = "250px";
+		}
+		
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("main").style.marginLeft= "0";
+		}
+</script>
 </body>
 </html>
