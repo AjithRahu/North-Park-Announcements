@@ -3,7 +3,6 @@
             By: AJITH
             
 */            
-
 function viewPost() {
     
         document.getElementById("posted").innerHTML = null;
@@ -33,24 +32,16 @@ function viewPost() {
 
 
 function remove() {
-     
-     alert("connected");
-     
-     document.getElementById("delete").remove();
         
- /*     var posts = JSON.parse(localStorage.getItem("post"));
+     var posts = JSON.parse(localStorage.getItem("post"));
       
-      var index = posts.indexOf()
+
       
-      if (index > -1) {
-        posts.splice(index, 1);
-    }
-        */
-}
+      
+  }
 
-
-//when click post
-function create() {
+      
+  function create() {
     
       
     //acquiring the array from local storage

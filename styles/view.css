@@ -30,33 +30,13 @@
     color: #25B89B;
     padding-bottom: 15px;
 }
-.announcements {
-    padding-left: 9px;
-}
 
 
 
-/*
 
-.announcements {
-    width: 130rem;
-    height: 50rem;
-    border-style: solid;
-    border-color: #25B89B;
-    margin-left: 5px;
 
-}
 
-@media only screen and (max-width: 500px) {
-    .announcements {
-        width: 44rem;
-        height: 50rem;
-        margin-left: 5px;
 
-}
-}
-
-*/
 .input[type=text] {
     width: 130px;
     transition: width 0.4s ease-in-out;
@@ -78,6 +58,7 @@ input[type=text]:focus {
 
 .add {
     text-align: center;
+    margin-right: 20rem;
     
 }
 
@@ -125,13 +106,16 @@ input[type=text]:focus {
     border:1px solid #25B89B;
     border-radius: 15px;
     align-items: center;
+    
 }
 
 .announcements {
-    transition: ease-in 0.8s;
+    text-align: center;
 
     
 }
+
+
 
 .sidenav {
     height: 100%;
@@ -150,7 +134,7 @@ input[type=text]:focus {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #25B89B;
     display: block;
     transition: 0.3s
 }
