@@ -1,16 +1,15 @@
-/*
-      NORTH PARK ANNOUNCEMENTS 
-            By: AJITH
-            
-*/            
+         
+// View Posts in View page
 function viewPost() {
     
+    // Get Div where posts will be stored
         document.getElementById("posted").innerHTML = null;
-            
+    
+    // Get Posts from Local Storage         
         var posts = JSON.parse(localStorage.getItem("post"));
         
-        // document.getElementById("posted").innerHTML = JSON.stringify(posts[0].date);
-        
+
+    // For every post, it will be ordered in this arrangement    
         for (var i = 0; i < posts.length; i++) {
          var postDetail = 
                     "<div class='announcement col-md-3' id='delete'> " +
@@ -25,21 +24,43 @@ function viewPost() {
                 document.getElementById("posted").innerHTML = document.getElementById("posted").innerHTML + postDetail;
 
     }
+      
+                    
+    }
         
-        
-}
+     
+       
+    function remove(e) {
 
-
-
-function remove() {
-        
      var posts = JSON.parse(localStorage.getItem("post"));
-      
+    
+    // if posts length is 0 that means there are no posts so an alert would occur    
+   if (posts.length == 0) {
+       alert("There is no annoucement to delete");
+    
+   }
+    else { 
+        // gets posts from storage
+        var posts = JSON.parse(localStorage.getItem("post"));
+        // delete that specific post
+        posts.splice(e, 1);
+        alert("The post has been deleted");
+        // After deleting the first object in array it will be re c 00set in local storage
+        localStorage.setItem("post", JSON.stringify(posts));
+        location.reload();
+        
+    }
+    
+    }
+     
 
       
-      
-  }
+  
 
+
+
+
+// Create Post
       
   function create() {
     
@@ -52,24 +73,36 @@ function remove() {
     }
     
    // Set Variables
-       var club =  document.getElementById('club').value;
-       var date = document.getElementById('date').value;
-       var time =  document.getElementById('time').value;
-       var location =  document.getElementById('location').value;
-       var description =  document.getElementById('description').value;
+   var club =  document.getElementById('club').value;
+   var date = document.getElementById('date').value;
+   var time =  document.getElementById('time').value;
+   var location =  document.getElementById('location').value;
+   var description =  document.getElementById('description').value;
+   var rid = (Math.random() + 1).toString(36).substr(2, 8);
+
+   // if all the input boxes have a value, the function will continue. If all are nnot a alert will be displayed 
     
-    
-    var post = {
-                "club":club, "date":date, "time":time, "location":location, "description":description
+    if (club != "" && date != "" && time != "" && location != "" && description != "") {
+       var post = {
+                "club":club, 
+                "date":date, 
+                "time":time, 
+                "location":location, 
+                "description":description,
+                "rid": rid
                 };
     
     announcements.unshift(post);    
     
     localStorage.setItem("post", JSON.stringify(announcements));
-    viewPost();
+     window.location.href = "view.html";
     
        //alert post successful
     alert ("Post Successful");
+    } else {
+        alert("Fill in all boxes");
+    }    
+    
     
     }
 

@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<script src="scripts/create.js"></script>
+	<script src="scripts/sidemenu.js"></script>
 	<title>Post an Announcement</title>
 	<link href="styles/create.css" rel="stylesheet">
 	<link href="styles/view.css" rel="stylesheet">
@@ -11,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
 </head>
 <body>
+	<!-- Header -->
 	<div class="header">
 			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 			<h1 class="title">North Park Announcements</h1>
@@ -18,10 +20,10 @@
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			  <a href="view.html">Home</a>
 			  <a href="create.html">Create</a>
-			  <a href="account.html">Settings</a>
 			  <a href="index.html">Sign Out</a>
 			</div>
 	</div>
+	<!-- Create Posts Here -->
 	<div class="create">
 		 <div class="login">
             <h1 class="subtitle">Post an Announcement</h1>
@@ -32,19 +34,9 @@
 	            <input type="text" placeholder="Location" id="location">
 	            <input type="text" placeholder="Description" id="description">
             </form>
-            <a href="view.html"><button id="btnPost" onclick="create()">Post</button></a>
+            <br>
+            <button id="btnPost" onclick="create()">Post</button>
         </div>
 	</div>
-	<script>
-		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
-		    document.getElementById("main").style.marginLeft = "250px";
-		}
-		
-		function closeNav() {
-		    document.getElementById("mySidenav").style.width = "0";
-		    document.getElementById("main").style.marginLeft= "0";
-		}
-	</script>
 </body>
 </html>

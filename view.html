@@ -4,6 +4,7 @@
 <head>
 <script src="scripts/create.js"></script>
 <script src="scripts/search.js"></script>
+<script src="scripts/sidemenu.js"></script>
 <meta charset="utf-8">
 <title>Announcements View</title>
 
@@ -14,23 +15,28 @@
 </head>
 <body onload="viewPost()">
 		<div class="header">
-			  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 			<h1 class="title">North Park Announcements</h1>
-					<div id="mySidenav" class="sidenav">
-					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					  <a href="view.html">Home</a>
-					  <a href="create.html">Create</a>
-					  <a href="account.html">Settings</a>
-					  <a href="index.html">Sign Out</a>
-					</div>
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="view.html">Home</a>
+			  <a href="create.html">Create</a>
+			  <a href="index.html">Sign Out</a>
+			</div>
 		</div>
 		<div class="searchbar">
-			<input type="text" name="search" placeholder="Search.." class="search">
+			<input type="text" name="search" id="searchbar" placeholder="Search.." class="search" >
+			<button onclick="search()"> Search</button>
 		</div>
 		<div class="view">
-			<div class="login">
+			<div class="lg">
 				<h1>View</h1>
 			</div>
+			<!-- Search Results -->
+			<div id="search">
+				
+			</div>
+			<!-- Where Posts will be displayed -->
 			<div class="announcements">
 				<div id="posted" class="row">
 					
@@ -38,19 +44,8 @@
 			</div>
 		<div class="button row">
 			<div class="col-lg-4"></div>
-			<div class="col-lg-4 add"><a href="create.html" class="addbutton"><img src="add_icon.svg" class="addpost"></a></div>
+			<div class="col-lg-4 add"><a href="create.html" class="addbutton"><img src="5004-512.png" class="addpost"></a></div>
 			<div class="col-lg-4"></div>
 		</div>
-		<script>
-		function openNav() {
-		    document.getElementById("mySidenav").style.width = "250px";
-		    document.getElementById("main").style.marginLeft = "250px";
-		}
-		
-		function closeNav() {
-		    document.getElementById("mySidenav").style.width = "0";
-		    document.getElementById("main").style.marginLeft= "0";
-		}
-</script>
 </body>
 </html>

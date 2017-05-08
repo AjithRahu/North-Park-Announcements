@@ -10,7 +10,7 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
     <script src="scripts/login.js"></script>
 </head>
-<body id="firebaseui-auth-container">
+<body id="">
 	<div class="header">
 		<h1 class="title">North Park Announcements</h1>
 		
@@ -20,11 +20,15 @@
             <h1 class="subtitle">Log In</h1>
             <input type="email" placeholder="email" id="txtEmail" >
             <input type="password" placeholder="password" id="txtPassword" >
-            
+            <br>
             <button id="btnLogin" onclick="login()">Login</button>
-            <button id="btnSignUp" onclick="register_user()"> Register </button>
+           <!-- <button id="btnSignUp" onclick="register_user()"> Register </button> -->
+            <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
         </div>
 	</div>
+	
+	
+	
 </body>
 </html>
 
