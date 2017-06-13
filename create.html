@@ -8,10 +8,11 @@
 	<title>Post an Announcement</title>
 	<link href="styles/create.css" rel="stylesheet">
 	<link href="styles/view.css" rel="stylesheet">
+		<link href="styles/queries.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
 </head>
-<body>
+<body class="bod">
 	<!-- Header -->
 	<div class="header">
 			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -35,7 +36,12 @@
 	            <input type="text" placeholder="Description" id="description">
             </form>
             <br>
-            <button id="btnPost" onclick="create()">Post</button>
+            <div class="button row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4 add"><button id="btnPost" onclick="create()">Post</button></div>
+				<div class="col-lg-4"></div>
+			</div>
+
         </div>
 	</div>
 </body>

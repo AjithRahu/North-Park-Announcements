@@ -1,21 +1,33 @@
-body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
+.bod {
+ background-color: #3498db;
 }
+
+.addclub {
+    background-color: #3498db;
+    text-align: center;
+}
+
+
 * {
     font-family: "Roboto", sans-serif;
+
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 .title {
     text-align: center;
     padding-top: -5rem;
-    font-size: 5rem;    
+    font-size: 6rem;    
+}
+
+.subtitle {
+    text-align: center;
+    padding-top: -5rem;
 }
 
 .lg {
@@ -33,14 +45,6 @@ body {
     color: black;
     padding-bottom: 15px;
 }
-
-
-
-
-
-
-
-
 
 .searchbar {
     text-align: center;
@@ -121,10 +125,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #76b852;
-    color: -moz-linear-gradient(right, #76b852, #8DC26F);
-    color: -o-linear-gradient(right, #76b852, #8DC26F);
-    color: linear-gradient(to left, #76b852, #8DC26F);
+    color: #3498db;
     font-family: "Roboto", sans-serif;
     display: block;
     transition: 0.3s
@@ -150,5 +151,22 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.Basketball {
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: #3498db;
+}
+
+
+.submit {
+    align-items: center;
+}
+
+
+.follow {
+    background-color: #3498db;
+    padding-bottom: 3rem;
 }
 

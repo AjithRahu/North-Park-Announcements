@@ -1,0 +1,1 @@
+Hi Mr. Di Iorio, I just want to go over some things I have done to the webiste so you know 
